@@ -13,6 +13,9 @@ BOT_NAME = 'sinaweibo'
 
 SPIDER_MODULES = ['sinaweibo.spiders']
 NEWSPIDER_MODULE = 'sinaweibo.spiders'
+ITEM_PIPELINES = {
+    'sinaweibo.pipelines.SinaweiboPipeline': 800,
+}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
