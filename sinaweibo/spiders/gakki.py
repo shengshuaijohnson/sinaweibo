@@ -12,6 +12,7 @@ class GakkiSpider(Spider):
     def load_item(self, d):
         return d
 
+
     def parse(self, response):
         items = []
         item = Blog()
