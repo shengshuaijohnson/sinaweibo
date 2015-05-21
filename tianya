@@ -1,0 +1,188 @@
+
+str="""<ul>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC4.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC11.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC4.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC10.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC8.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC1.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC10.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz mr0">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC9.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC1.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC9.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC9.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC8.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC2.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC3.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC5.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz mr0">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC8.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC7.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC11.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC8.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pzbtn"></li>
+										<li class="j-pzbtn"></li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC4.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC3.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz mr0">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC6.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC5.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC10.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC1.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pzbtn"></li>
+										<li class="j-pzbtn"></li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC3.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC2.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz mr0">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC6.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC6.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC5.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC6.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC10.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC4.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC7.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC3.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz mr0">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC7.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC9.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC2.png?1">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC5.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC2.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC11.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC7.png?0">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC1.png?2">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<li class="j-pz mr0">
+											<img src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/NPC11.png?3">
+											<img class="j-pzbm" src="http://static.sgamer.com/style/topic/wuxia/bushandang/images/pic0.jpg">
+										</li>
+										<div class="j-reset"></div>
+									</ul>"""
+print str.count("NPC")
+for i in str:
+    if i=='N':
+        print i
