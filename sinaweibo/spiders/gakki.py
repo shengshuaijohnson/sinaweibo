@@ -6,12 +6,11 @@ from sinaweibo.items import Blog  # text.time
 
 class GakkiSpider(Spider):
     name = "gakki"
-    allowed_domains = ["http://sgamer.com/"]
-    start_urls = ["http://wuxia.sgamer.com/bushandang/"]
+    allowed_domains = ["http://weibo.com/"]
+    start_urls = ["http://weibo.com/aragakiyui0611"]
 
     def load_item(self, d):
         return d
-
 
     def parse(self, response):
         items = []
