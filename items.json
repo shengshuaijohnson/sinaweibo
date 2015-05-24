@@ -1,427 +1,838 @@
-{"text": "<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="apple-itunes-app" content="app-id=432274380">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="renderer" content="webkit" />
-<meta name="description" content="一个真实的网络问答社区，帮助你寻找答案，分享知识。"/>
-<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-<title>知乎 - 与世界分享你的知识、经验和见解</title>
-<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(57px).png" />
-<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(72px).png" sizes="72x72" />
-<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(76px).png" sizes="76x76" />
-<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(114px).png" sizes="114x114" />
-<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(120px).png" sizes="120x120" />
-<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(152px).png" sizes="152x152" />
-
-<link rel="shortcut icon" href="http://static.zhihu.com/static/favicon.ico" type="image/x-icon" />
-<link rel="dns-prefetch" href="p1.zhimg.com"/>
-<link rel="dns-prefetch" href="p2.zhimg.com"/>
-<link rel="dns-prefetch" href="p3.zhimg.com"/>
-<link rel="dns-prefetch" href="p4.zhimg.com"/>
-<link rel="dns-prefetch" href="comet.zhihu.com"/>
-<link rel="dns-prefetch" href="static.zhihu.com"/>
-<link rel="dns-prefetch" href="upload.zhihu.com"/>
-
-<link rel="stylesheet" href="http://static.zhihu.com/static/ver/128b8cbb513008bc1987aa4775283c09.reg.css" type="text/css" media="screen,print" />
-
-<meta name="google-site-verification" content="FTeR0c8arOPKh8c5DYh_9uu98_zJbaWw53J-Sch9MTg" />
-<meta property="qc:admins" content="14414345146201056375" />
-<meta name="baidu-site-verification" content="KPFppAFoYF4Kkdv9" />
-
-<link rel="canonical" href="http://www.zhihu.com" />
-
-<meta id="znonce" name="znonce" content="091856d190e143adbfcbc7039621c932">
-<!--[if lt IE 9]>
-<script src="http://static.zhihu.com/static/components/respond/dest/respond.min.js"></script>
-<link href="http://static.zhihu.com/static/components/respond/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
-<link href="/static/components/respond/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
-<script src="/static/components/respond/cross-domain/respond.proxy.js"></script>
-<![endif]-->
-
-<script src="http://static.zhihu.com/static/ver/30ff61b37d19820b83181a78d6ca0d16.instant.min.js"></script>
-</head>
-<body class="zhi">
-
-
-
-<div class="wrapper index-content-wrapper">
-<div class="top">
-<div class="inner-wrapper">
-<div class="form-wrapper" id="js-form-wrapper">
-<div class="logo"></div>
-
-<div id="js-sign-flow" class="desk-front sign-flow clearfix">
-<div class="view view-signin ">
-<form method="post" action="/login" class="zu-side-login-box">
-<input type="hidden" name="_xsrf" value="51781b7814158bb7e0076c3005bda667"/>
-<div class="title clearfix">
-<a class="js-signup signup-switch with-icon" href="#signup">注册<i class="icon-sign icon-sign-arrow"></i></a>
-<a class="with-icon return">
-<i class="icon-sign icon-sign-arrow-l"></i><span class="js-title-label">登录知乎</span>
-</a>
-</div>
-<div class="email input-wrapper">
-<input required type="email" name="email" placeholder="知乎注册邮箱"
-
->
-</div>
-<div class="input-wrapper">
-<input required type="password" name="password" maxlength="128" placeholder="密码">
-</div>
-<div class="captcha-holder">
-
-</div>
-
-<div class="button-wrapper command">
-<button class="sign-button" type="submit">登录</button>
-</div>
-<div class="signin-misc-wrapper clearfix">
-<label class="remember-me">
-<input type="checkbox" name="rememberme" checked value="y"> 记住我
-</label>
-<a class="js-resetpassword reset-password" href="#">忘记密码?</a>
-</div>
-<div class="weibo-signup-wrapper">
-社交帐号直接登录 &nbsp;
-<a class="js-bindweibo" href="javascript:;"><i class="icon-sign icon-sign-sina"></i></a>
-<a class="js-bindqq" href="javascript:;"><i class="icon-sign icon-sign-qq"></i></a>
-</div>
-</form>
-</div>
-<div class="view view-signup selected">
-<form action="/register/account" method="post" class="zu-side-login-box" id="sign-form-1" autocomplete="off">
-<input type="password" hidden>
-<input type="hidden" name="_xsrf" value="51781b7814158bb7e0076c3005bda667"/>
-<div class="title clearfix">
-<a class="js-signin signin-switch with-icon" href="#signin">登录<i class="icon-sign icon-sign-arrow"></i></a>
-<a class="with-icon return"><i class="icon-sign icon-sign-arrow-l"></i><span class="js-title-label">注册帐号</span></a>
-</div>
-<div class="name input-wrapper">
-<input required name="last_name" class="first" placeholder="姓"><input required name="first_name" class="last" placeholder="名">
-</div>
-<div class="email input-wrapper">
-<input required type="email" name="email" placeholder="邮箱">
-</div>
-<div class="input-wrapper">
-<input data-rule-strongpassword="true" required type="password" maxlength="128" name="password" placeholder="密码">
-</div>
-<div class="captcha-holder"></div>
-<div class="button-wrapper command">
-<button class="sign-button" type="submit">注册知乎</button>
-</div>
-<div class="weibo-signup-wrapper">
-社交帐号直接登录 &nbsp;
-<a class="js-bindweibo" href="javascript:;"><i class="icon-sign icon-sign-sina"></i></a>
-<a class="js-bindqq" href="javascript:;"><i class="icon-sign icon-sign-qq"></i></a>
-</div>
-</form>
-</div>
-<div class="view view-info">
-<form class="login" method="post" action="/register/account">
-<div class="input-wrap realname-wrap">
-<span>
-<input required class="zg-form-text-input first" aria-label="姓" name="last_name" placeholder="姓" type="text">
-</span>
-<span>
-<input required class="zg-form-text-input" aria-label="名" name="first_name" placeholder="名" type="text">
-</span>
-</div>
-<div class="input-wrap">
-<input required class="zg-form-text-input" aria-label="邮箱" name="email" placeholder="邮 箱" spellcheck="false" type="email" value="">
-</div>
-<div class="command">
-<input class="zg-btn-blue" type="submit" value="完成注册">
-</div>
-</form>
-</div>
-<div class="view view-resetpassword">
-<form class="resetpassword" method="post" action="/resetpassword">
-<div class="input-wrap">
-<input required class="zg-form-text-input" aria-label="邮箱" name="email" placeholder="邮 箱" spellcheck="false" type="email" value="">
-</div>
-<div class="command">
-<input class="zg-btn-blue" type="submit" value="重设密码">
-<span class="reset-success" style="display:none">邮件发送成功</span>
-</div>
-</form>
-</div>
-</div>
+{"text": ["
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "知乎 - 与世界分享你的知识、经验和见解", "
+", "
+", "
+", "
+", "
+", "
+", "
+
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+
+", "
+
+", "
+", "
+", "
+
+", "
+
+", "
+", "
+
+", "
+", "
+", "
+
+
+
+", "
+", "
+", "
+", "
+", "
+
+", "
+", "
+", "
+", "
+", "
+", "注册", "
+", "
+", "登录知乎", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+
+", "
+
+", "
+", "登录", "
+", "
+", "
+", "
+", " 记住我
+", "
+", "忘记密码?", "
+", "
+", "
+社交帐号直接登录  
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "登录", "
+", "注册帐号", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "注册知乎", "
+", "
+", "
+社交帐号直接登录  
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "邮件发送成功", "
+", "
+", "
+", "
+", "
 
-<div class="failure" id="summary"><ul></ul></div>
+", "
 
 
-<div class="js-captcha captcha-wrap">
-<div class="input-wrapper">
-<input id="captcha" name="captcha" placeholder="验证码" required>
-</div>
-<p class="input-wrapper captcha clearfix js-refresh-captcha">
-<span>看不清？</span> <a href="javascript:;">换一张</a>
-<img class="js-captcha-img" width="120" height="30" />
-</p>
-</div>
+", "
+", "
+", "
+", "
+", "
+", "看不清？", " ", "换一张", "
+", "
+", "
+", "
 
 
-<div class="mobi-front">
-<div class="button-wrapper">
-<button class="sign-button js-signin" type="submit">登录知乎</button>
-</div>
+", "
+", "
+", "登录知乎", "
+", "
 
-<div class="ft mobile">
-<a class="js-bindweibo" href="javascript:;"><i class="icon-sign icon-sign-sina"></i>微博登录</a>
-<span class="dot">·</span>
-<a class="js-bindqq qq-sign-up" href="javascript:;"><i class="icon-sign icon-sign-qq"></i>QQ 登录</a>
-<a class="js-signup" href="#signup">注册<i class="icon-sign icon-sign-arrow"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="bottom">
-<div class="inner-wrapper">
-<div class="stories zg-clear">
+", "
+", "微博登录", "
+", "·", "
+", "QQ 登录", "
+", "注册", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
 
-<div class="reps clearfix">
+", "
 
 
-<a target="_blank" href="/topic/19556231" class="rep current" data-type="topic" data-token="19556231">
-<span class="info-card">交互设计</span>
-<img src="http://pic1.zhimg.com/e77cabe14_m.jpg">
-</a>
+", "
+", "交互设计", "
+", "
+", "
 
 
 
 
-<a target="_blank" href="/people/sky-86-5" class="rep" data-type="member" data-token="950887fb196b0bb47b1f6a2e8c9ab410">
-<span class="info-card">sky</span>
-<img src="http://pic2.zhimg.com/97145be1d_m.jpg">
-</a>
+", "
+", "sky", "
+", "
+", "
 
 
 
 
 
-<a target="_blank" href="/people/magasa" class="rep" data-type="member" data-token="78dd7b7be85989df73b8b0ee1857e537">
-<span class="info-card">magasa</span>
-<img src="http://pic2.zhimg.com/50e9c2601_m.jpg">
-</a>
+", "
+", "magasa", "
+", "
+", "
 
 
 
 
 
-<a target="_blank" href="/people/feng-dong" class="rep" data-type="member" data-token="44faf17ff5f5a4ccc4cf9bda47de8da2">
-<span class="info-card">冯东</span>
-<img src="http://pic1.zhimg.com/1d3b18c14_m.jpg">
-</a>
+", "
+", "冯东", "
+", "
+", "
 
 
 
 
 
-<a target="_blank" href="/people/aullik5" class="rep" data-type="member" data-token="929dc8c4f87a15a8cb708a3534c8b299">
-<span class="info-card">道哥</span>
-<img src="http://pic3.zhimg.com/8e7626696_m.jpg">
-</a>
+", "
+", "道哥", "
+", "
+", "
 
 
 
 
 
-<a target="_blank" href="/people/zhang-jia-wei" class="rep" data-type="member" data-token="f9de84865e3e8455a09af78bfe4d1da5">
-<span class="info-card">张佳玮</span>
-<img src="http://pic2.zhimg.com/424c70919_m.jpg">
-</a>
+", "
+", "张佳玮", "
+", "
+", "
 
 
 
 
 
-<a target="_blank" href="/people/moonmonster" class="rep" data-type="member" data-token="021b8a95614aeac74347f441505205e9">
-<span class="info-card">MoonMonster</span>
-<img src="http://pic4.zhimg.com/3df29abc3_m.jpg">
-</a>
+", "
+", "MoonMonster", "
+", "
+", "
 
 
 
 
-<a target="_blank" href="/topic/19554827" class="rep" data-type="topic" data-token="19554827">
-<span class="info-card">体育</span>
-<img src="http://pic2.zhimg.com/c8f2d728879d05657d86ca6fa6b0336d_m.jpg">
-</a>
+", "
+", "体育", "
+", "
+", "
 
 
 
-<a target="_blank" href="/topic/19604128" class="rep" data-type="topic" data-token="19604128">
-<span class="info-card">医学</span>
-<img src="http://pic1.zhimg.com/a78b253d8f27af0933c63bae17bb5cb0_m.jpg">
-</a>
+", "
+", "医学", "
+", "
+", "
 
 
 
 
-<a target="_blank" href="/people/MrToyy" class="rep" data-type="member" data-token="547f818559baffd86f27e61d51c7b972">
-<span class="info-card">MrToyy</span>
-<img src="http://pic3.zhimg.com/41b493a56_m.jpg">
-</a>
+", "
+", "MrToyy", "
+", "
+", "
 
 
 
 
-<a target="_blank" href="/topic/19553032" class="rep" data-type="topic" data-token="19553032">
-<span class="info-card">广告</span>
-<img src="http://pic1.zhimg.com/70ddd5e0c_m.jpg">
-</a>
+", "
+", "广告", "
+", "
+", "
 
 
 
 
-<a class="rep" data-type="member" data-token="c7ea4a83791990952e2cee95f0bebf10">
-<span class="info-card">知乎用户</span>
-<img src="http://pic1.zhimg.com/da8e974dc_m.jpg">
-</a>
+", "
+", "知乎用户", "
+", "
+", "
 
 
 
 
-<a target="_blank" href="/topic/19550560" class="rep" data-type="topic" data-token="19550560">
-<span class="info-card">创业</span>
-<img src="http://pic4.zhimg.com/b75f995419ff775ff71fca685d7825af_m.jpg">
-</a>
+", "
+", "创业", "
+", "
+", "
 
 
 
 
-<a target="_blank" href="/people/zliybst" class="rep" data-type="member" data-token="cade1851cc743b0d1151007299ae2b74">
-<span class="info-card">少少</span>
-<img src="http://pic2.zhimg.com/843e04171_m.jpg">
-</a>
+", "
+", "少少", "
+", "
+", "
 
 
 
 
-<a target="_blank" href="/topic/19558438" class="rep" data-type="topic" data-token="19558438">
-<span class="info-card">建筑</span>
-<img src="http://pic3.zhimg.com/8e1c10bc218754374553256fe6a98c56_m.jpg">
-</a>
+", "
+", "建筑", "
+", "
+", "
 
 
-</div>
+", "
 
 
 
 
-<div class="single-story">
-<i class="icon-sign icon-sign-spike"></i>
+", "
+", "
 
-<div class="single-story-inner topic">
-<img class="story-avatar" src="http://pic1.zhimg.com/e77cabe14_m.jpg">
-<div class="story-title">
-<div>
-<a class="name" href="/topic/19556231" target="_blank">交互设计</a>
-</div>
-<div>70182 人关注该话题，999 个精华回答</div>
-</div>
-<div class="sep"></div>
-<div class="story-content">
+", "
+", "
+", "
+", "
+", "交互设计", "
+", "
+", "70182 人关注该话题，999 个精华回答", "
+", "
+", "
+", "
 
-<div class="story-content-answer">
-<span class="vote">
+", "
+", "
 9453
-</span>
-<p><a class="question_link" target="_blank" href="/question/27360494/answer/36550648">如何让电脑有种很高端的感觉？</a></p>
-</div>
+", "
+", "如何让电脑有种很高端的感觉？", "
+", "
 
-<div class="story-content-answer">
-<span class="vote">
+", "
+", "
 6564
-</span>
-<p><a class="question_link" target="_blank" href="/question/27475550/answer/46438120">国内有哪些非常有设计感的 App？</a></p>
-</div>
+", "
+", "国内有哪些非常有设计感的 App？", "
+", "
 
-<div class="story-content-answer">
-<span class="vote">
+", "
+", "
 6136
-</span>
-<p><a class="question_link" target="_blank" href="/question/26380791/answer/32712605">有哪些好的网站，让人第一眼看了就怦然心动，流连忘返？</a></p>
-</div>
+", "
+", "有哪些好的网站，让人第一眼看了就怦然心动，流连忘返？", "
+", "
 
-<div class="story-content-answer">
-<span class="vote">
+", "
+", "
 6087
-</span>
-<p><a class="question_link" target="_blank" href="/question/20787836/answer/24705162">令人印象最深刻的包装盒设计有哪些？</a></p>
-</div>
+", "
+", "令人印象最深刻的包装盒设计有哪些？", "
+", "
 
-<div class="story-content-answer">
-<span class="vote">
+", "
+", "
 5748
-</span>
-<p><a class="question_link" target="_blank" href="/question/20586917/answer/18468643">信息图（infographic）是怎么做出来的？</a></p>
-</div>
+", "
+", "信息图（infographic）是怎么做出来的？", "
+", "
 
-</div>
-</div>
+", "
+", "
 
-</div>
+", "
 
-</div>
-</div>
-</div>
-<div class="sitemap" style="display:none">
+", "
+", "
+", "
+", "
 
-<a href="http://www.zhihu.com/map/good_question_150523.html">2015-05-23</a>
+", "2015-05-23", "
 
-<a href="http://www.zhihu.com/map/good_question_150522.html">2015-05-22</a>
+", "2015-05-22", "
 
-<a href="http://www.zhihu.com/map/good_question_150521.html">2015-05-21</a>
+", "2015-05-21", "
 
-<a href="http://www.zhihu.com/map/good_question_150520.html">2015-05-20</a>
+", "2015-05-20", "
 
-<a href="http://www.zhihu.com/map/good_question_150519.html">2015-05-19</a>
+", "2015-05-19", "
 
-<a href="http://www.zhihu.com/map/good_question_150518.html">2015-05-18</a>
+", "2015-05-18", "
 
-<a href="http://www.zhihu.com/map/good_question_150517.html">2015-05-17</a>
+", "2015-05-17", "
 
-</div>
-<div class="footer">
-<div class="links">
-<div>
-<span>&copy; 2015 知乎</span>
-<span class="dot">·</span>
-<a target="_blank" href="/roundtable">知乎圆桌</a>
-<span class="dot">·</span>
-<a target="_blank" href="/explore">发现</a>
-<span class="dot">·</span>
-<a target="_blank" href="/app">移动应用</a>
-<span class="dot">·</span>
-<a target="_blank" href="/careers">来知乎工作</a>
-</div>
-<div>
-<a href="http://www.miibeian.gov.cn/" target="_blank">京 ICP 备 13052560 号</a>
-<span>·</span>
-<span>京公网安备 11010802010035 号</span>
-</div>
-</div>
-<a title="下载知乎 iPhone 客户端" target="_blank" class="app-link ios icon-sign icon-sign-ios" href="https://itunes.apple.com/app/apple-store/id432274380?pt=550679&ct=weidengluyemian_ios_button&mt=8"></a>
-<a title="下载知乎 Android 客户端" target="_blank" class="app-link android icon-sign icon-sign-android goog-play" href="http://api.zhihu.com/client/download/apk"></a>
-</div>
+", "
+", "
+", "
+", "
+", "© 2015 知乎", "
+", "·", "
+", "知乎圆桌", "
+", "·", "
+", "发现", "
+", "·", "
+", "移动应用", "
+", "·", "
+", "来知乎工作", "
+", "
+", "
+", "京 ICP 备 13052560 号", "
+", "·", "
+", "京公网安备 11010802010035 号", "
+", "
+", "
+", "
+", "
+", "
 
-</div>
+", "
 
-<script type="text/json" class="json-inline" data-name="current_user">["","","","-1","",0,0]</script>
-<script type="text/json" class="json-inline" data-name="env">["zhihu.com","comet.zhihu.com",false,null]</script>
+", "["","","","-1","",0,0]", "
+", "["zhihu.com","comet.zhihu.com",false,null]", "
 
-<script type="text/json" class="json-inline" data-name="ga_vars">{"user_created":0,"now":1432464019000,"abtest_mask":"------------------------------","user_attr":[0,0,0,"-","-"],"user_hash":0}</script>
+", "{"user_created":0,"now":1432464019000,"abtest_mask":"------------------------------","user_attr":[0,0,0,"-","-"],"user_hash":0}", "
 
-<script src="http://static.zhihu.com/static/ver/82cfd3bf774281811fa8287dc189988f.extern_src.min.js"></script>
-<script src="http://static.zhihu.com/static/ver/db7f17a85e1dc70e622767f67688deb7.app_core.js"></script>
-<script src="http://static.zhihu.com/static/ver/691eb24bc406266afde2655a52d4f133.sign.js"></script>
+", "
+", "
+", "
 
-<meta name="entry" content="ZH.entrySignPage">
+", "
 
-<input type="hidden" name="_xsrf" value="51781b7814158bb7e0076c3005bda667"/>
-</body>
-</html>"}
+", "
+", "
+"]}
+{"text": ["
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "知乎 - 与世界分享你的知识、经验和见解", "
+", "
+", "
+", "
+", "
+", "
+", "
+
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+
+", "
+
+", "
+", "
+", "
+
+", "
+
+", "
+", "
+
+", "
+", "
+", "
+
+
+
+", "
+", "
+", "
+", "
+", "
+
+", "
+", "
+", "
+", "
+", "
+", "注册", "
+", "
+", "登录知乎", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+
+", "
+
+", "
+", "登录", "
+", "
+", "
+", "
+", " 记住我
+", "
+", "忘记密码?", "
+", "
+", "
+社交帐号直接登录  
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "登录", "
+", "注册帐号", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "注册知乎", "
+", "
+", "
+社交帐号直接登录  
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "邮件发送成功", "
+", "
+", "
+", "
+", "
+
+", "
+
+
+", "
+", "
+", "
+", "
+", "
+", "看不清？", " ", "换一张", "
+", "
+", "
+", "
+
+
+", "
+", "
+", "登录知乎", "
+", "
+
+", "
+", "微博登录", "
+", "·", "
+", "QQ 登录", "
+", "注册", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+", "
+
+", "
+
+
+", "
+", "交互设计", "
+", "
+", "
+
+
+
+
+", "
+", "sky", "
+", "
+", "
+
+
+
+
+
+", "
+", "magasa", "
+", "
+", "
+
+
+
+
+
+", "
+", "冯东", "
+", "
+", "
+
+
+
+
+
+", "
+", "道哥", "
+", "
+", "
+
+
+
+
+
+", "
+", "张佳玮", "
+", "
+", "
+
+
+
+
+
+", "
+", "MoonMonster", "
+", "
+", "
+
+
+
+
+", "
+", "体育", "
+", "
+", "
+
+
+
+", "
+", "医学", "
+", "
+", "
+
+
+
+
+", "
+", "MrToyy", "
+", "
+", "
+
+
+
+
+", "
+", "广告", "
+", "
+", "
+
+
+
+
+", "
+", "知乎用户", "
+", "
+", "
+
+
+
+
+", "
+", "创业", "
+", "
+", "
+
+
+
+
+", "
+", "少少", "
+", "
+", "
+
+
+
+
+", "
+", "建筑", "
+", "
+", "
+
+
+", "
+
+
+
+
+", "
+", "
+
+", "
+", "
+", "
+", "
+", "交互设计", "
+", "
+", "70182 人关注该话题，999 个精华回答", "
+", "
+", "
+", "
+
+", "
+", "
+9453
+", "
+", "如何让电脑有种很高端的感觉？", "
+", "
+
+", "
+", "
+6564
+", "
+", "国内有哪些非常有设计感的 App？", "
+", "
+
+", "
+", "
+6136
+", "
+", "有哪些好的网站，让人第一眼看了就怦然心动，流连忘返？", "
+", "
+
+", "
+", "
+6087
+", "
+", "令人印象最深刻的包装盒设计有哪些？", "
+", "
+
+", "
+", "
+5748
+", "
+", "信息图（infographic）是怎么做出来的？", "
+", "
+
+", "
+", "
+
+", "
+
+", "
+", "
+", "
+", "
+
+", "2015-05-23", "
+
+", "2015-05-22", "
+
+", "2015-05-21", "
+
+", "2015-05-20", "
+
+", "2015-05-19", "
+
+", "2015-05-18", "
+
+", "2015-05-17", "
+
+", "
+", "
+", "
+", "
+", "© 2015 知乎", "
+", "·", "
+", "知乎圆桌", "
+", "·", "
+", "发现", "
+", "·", "
+", "移动应用", "
+", "·", "
+", "来知乎工作", "
+", "
+", "
+", "京 ICP 备 13052560 号", "
+", "·", "
+", "京公网安备 11010802010035 号", "
+", "
+", "
+", "
+", "
+", "
+
+", "
+
+", "["","","","-1","",0,0]", "
+", "["zhihu.com","comet.zhihu.com",false,null]", "
+
+", "{"user_created":0,"now":1432464019000,"abtest_mask":"------------------------------","user_attr":[0,0,0,"-","-"],"user_hash":0}", "
+
+", "
+", "
+", "
+
+", "
+
+", "
+", "
+"]}
