@@ -2,6 +2,7 @@ __author__ = 'Administrator'
 # -*- coding: utf-8 -*-
 from scrapy.spider import Spider
 from sinaweibo.items import Blog
+import scrapy
 from scrapy.http import Request
 
 
@@ -17,11 +18,23 @@ class Zhihuspider(Spider):
     ]
 
     def parse(self, response):
-        site = response.xpath("//text()").extract()
-        item = Blog()
-        item["text"] = site
+        return scrapy.FormRequest.from_response(
+            response,
+            formdata=dict(email='120559187@qq.com', password='******'),
+            callback=self.after_login
+        )
 
-        if response.url == "http://www.zhihu.com/":
-            yield Request("http://bbs.sgamer.com/forum-44-2.html", callback=self.parse)
-        yield load_item(item)
+    def after_login(self, response):
+        print"loooooooooooooooooooooook"
+        site = response.xpath('//text()').extract()
+        items = []
+        for sel in site:
+            if len(sel) > 1:
+                item = Blog()
+                item["text"] = sel
+                items.append(item)
+        # if response.url == "http://www.zhihu.com/":
+        #    yield Request("http://bbs.sgamer.com/forum-44-2.html", callback=self.parse)
+        for d in items:
+            yield load_item(d)
         return
