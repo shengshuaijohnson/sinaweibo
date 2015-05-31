@@ -20,7 +20,7 @@ class Zhihuspider(Spider):
     def parse(self, response):
         return scrapy.FormRequest.from_response(
             response,
-            formdata=dict(email='120559187@qq.com', password='******'),
+            formdata=dict(email='120559187@qq.com', password='yixuanzyx'),
             callback=self.after_login
         )
 
@@ -33,8 +33,11 @@ class Zhihuspider(Spider):
                 item = Blog()
                 item["text"] = sel
                 items.append(item)
-        # if response.url == "http://www.zhihu.com/":
-        #    yield Request("http://bbs.sgamer.com/forum-44-2.html", callback=self.parse)
+        item = Blog()
+        item["text"] = response.url
+        print response.url.split("/")[-2]
+        if response.url == "http://www.zhihu.com/":
+            yield Request("http://weibo.com/", callback=self.after_login)
         for d in items:
             yield load_item(d)
         return
