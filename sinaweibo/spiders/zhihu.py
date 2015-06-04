@@ -20,7 +20,7 @@ class Zhihuspider(Spider):
     def parse(self, response):
         return scrapy.FormRequest.from_response(
             response,
-            formdata=dict(email='120559187@qq.com', password='yixuanzyx'),
+            formdata=dict(email='120559187@qq.com', password='******'),
             callback=self.after_login
         )
 
