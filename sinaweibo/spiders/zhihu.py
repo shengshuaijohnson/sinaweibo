@@ -20,12 +20,13 @@ class Zhihuspider(Spider):
     def parse(self, response):
         return scrapy.FormRequest.from_response(
             response,
-            formdata=dict(email='120559187@qq.com', password='******'),
+            formdata=dict(email='120559187@qq.com', password='yixuanzyx'),
             callback=self.after_login
         )
 
     def after_login(self, response):
         print"loooooooooooooooooooooook"
+        print response.url
         site = response.xpath('//text()').extract()
         items = []
         for sel in site:
