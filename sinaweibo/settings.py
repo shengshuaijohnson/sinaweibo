@@ -8,16 +8,18 @@
 #     http://doc.scrapy.org/en/latest/topics/settings.html
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
+IMAGES_THUMBS = {
+    'small': (50, 50),
+    'big': (270, 270),
+}
 
 BOT_NAME = 'sinaweibo'
 IMAGES_STORE = 'e:/repository/sinaweibo/'
 SPIDER_MODULES = ['sinaweibo.spiders']
 NEWSPIDER_MODULE = 'sinaweibo.spiders'
 ITEM_PIPELINES = {
-    'sinaweibo.pipelines.SinaweiboPipeline': 800,
     'sinaweibo.pipelines.MyImagesPipeline': 80,
 }
-
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
