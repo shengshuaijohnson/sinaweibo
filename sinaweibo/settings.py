@@ -18,7 +18,7 @@ IMAGES_STORE = 'e:/repository/sinaweibo/'
 SPIDER_MODULES = ['sinaweibo.spiders']
 NEWSPIDER_MODULE = 'sinaweibo.spiders'
 ITEM_PIPELINES = {
-    'sinaweibo.pipelines.SinaweiboPipeline': 80,
+    'sinaweibo.pipelines.MyImagesPipeline': 80,
 }
 
 

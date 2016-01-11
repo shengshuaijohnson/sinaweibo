@@ -20,6 +20,7 @@ class GakkiSpider(Spider):
         return d
 
     def parse(self, response):
+        print"laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaak"
         user_agent = {'User-agent': 'spider'}  # Mozilla/5.0 (compatible; Googlebot/2.1
         yield scrapy.Request("http://weibo.com/aragakiyui0611?is_search=0&visible=0&is_tag=0&profile_ftype=1&page=1#feedtop",
                              callback=self.after_login,
@@ -27,23 +28,23 @@ class GakkiSpider(Spider):
                              )
 
     def after_login(self, response):
-        print "jooooooooooooooooooooooooo!"
-        print response.xpath('//')
-        
-        """
         imgsite=response.xpath('//img[@action-type="fl_pics"]')
         solo=response.xpath('//img[@node-type="feed_list_media_bgimg"]')
         imgsite.append(solo)
-        print solo
-        imgsite=response.xpath('//img')
         items = []
-
+        """
+        site = response.xpath('//div[@class="WB_detail"]')
+        for sel in site:
+            item = Blog()
+            item['text'] = sel.xpath('div[@class="WB_text W_f14"]/text()').extract()
+            #item['image_urls'] =sel.xpath('div[@class="WB_media_wrap clearfix"]/div/ul/li/img/@src').extract()
+            items.append(item)
+        """
         for sel in imgsite:
             item = Blog()
             item['image_urls']=sel.xpath('@src').extract() #square  <>bmiddle
-            #item['image_urls'][0]=item['image_urls'][0].replace("square","bmiddle")
+            item['image_urls'][0]=item['image_urls'][0].replace("square","bmiddle")
             items.append(item)
         for d in items:
             yield self.load_item(d)
-        """
         return
