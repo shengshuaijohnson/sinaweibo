@@ -14,17 +14,10 @@ class Zhihuspider(Spider):
     name = "zhihu"
     # allowed_domains = ["http://www.zhihu.com/"]
     start_urls = [
-        "http://www.zhihu.com/#signin"
+        "http://weibo.com/aragakiyui0611"
     ]
 
     def parse(self, response):
-        return scrapy.FormRequest.from_response(
-            response,
-            formdata=dict(email='120559187@qq.com', password='yixuanzyx'),
-            callback=self.after_login
-        )
-
-    def after_login(self, response):
         print"loooooooooooooooooooooook"
         print response.url
         site = response.xpath('//text()').extract()
@@ -37,8 +30,6 @@ class Zhihuspider(Spider):
         item = Blog()
         item["text"] = response.url
         print response.url.split("/")[-2]
-        if response.url == "http://www.zhihu.com/":
-            yield Request("http://weibo.com/", callback=self.after_login)
         for d in items:
             yield load_item(d)
         return
