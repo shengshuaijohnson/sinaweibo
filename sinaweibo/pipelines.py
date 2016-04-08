@@ -15,7 +15,6 @@ class SinaweiboPipeline(object):
         self.file.write(line.decode('unicode_escape'))
         return item
 class MyImagesPipeline(ImagesPipeline):
-
     def get_media_requests(self, item, info):
         for image_url in item['image_urls']:
             yield scrapy.Request(image_url)
