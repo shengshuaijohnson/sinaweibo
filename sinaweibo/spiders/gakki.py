@@ -3,7 +3,7 @@ __author__ = 'Administrator'
 from scrapy.spider import Spider
 import scrapy
 from sinaweibo.items import Blog
-
+from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
 
 def load_item(d):
     return d
@@ -18,22 +18,23 @@ class GakkiSpider(Spider):
     def parse(self, response):
         yield scrapy.Request(
             "http://weibo.com/aragakiyui0611",
+            cookies =COOKIES,
             callback=self.after_login,
-            headers={'User-agent': 'spider'}
             )
         print "hhhhhhhhhhhhhh"
         return
     def after_login(self,response):
-        imgsite=response.xpath('//img[@action-type="fl_pics"]')
+        print "jjjjjjjjjjjjjjjjjj"
+        #site=response.xpath('//img[@action-type="fl_pics"]').extract()
         print "aaaaaaaaaaaaaa"
+        print"bbbbbbbbbbbbbbbbbb"
         items=[]
-        for sel in imgsite:
-            item = Blog()
-            item['image_urls']=sel.xpath('@src').extract() #square  <>bmiddle
-            #item['image_urls'][0]=item['image_urls'][0].replace("square","bmiddle")
-            items.append(item)
+        item = Blog()
+        item["text"] =response.body
+        items.append(item)
+
         for d in items:
-            yield self.load_item(d)
+            yield load_item(d)
         return
 COOKIES={
         "SINAGLOBAL":"6527430750429.63.1429364749729",
