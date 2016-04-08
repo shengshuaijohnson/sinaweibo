@@ -5,6 +5,8 @@ import scrapy
 from sinaweibo.items import Blog
 
 
+def load_item(d):
+    return d
 
 
 class GakkiSpider(Spider):
@@ -12,33 +14,24 @@ class GakkiSpider(Spider):
     # allowed_domains = ["http://weibo.com/aragakiyui0611"]
     start_urls = ["http://weibo.com/aragakiyui0611"]
 
-    def load_item(self, d):
-        return d
+
     def parse(self, response):
-        site=response.xpath("body").extract()
-        user_agent = {'User-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36'} # Googlebot/2.1
+        yield scrapy.Request(
+            "http://weibo.com/aragakiyui0611",
+            callback=self.after_login,
+            headers={'User-agent': 'spider'}
+            )
         print "hhhhhhhhhhhhhh"
-        yield scrapy.Request("http://weibo.com/aragakiyui0611",
-                             callback=self.after_login,
-                             headers=user_agent
-        )
-        
         return
     def after_login(self,response):
-        #imgsite=response.xpath('//img[@action-type="fl_pics"]')
-        site=response.xpath('/')
+        imgsite=response.xpath('//img[@action-type="fl_pics"]')
         print "aaaaaaaaaaaaaa"
         items=[]
-        item=Blog();
-        item['text']=site.extract()
-        items.append(item)
-        """
         for sel in imgsite:
             item = Blog()
             item['image_urls']=sel.xpath('@src').extract() #square  <>bmiddle
             #item['image_urls'][0]=item['image_urls'][0].replace("square","bmiddle")
             items.append(item)
-        """
         for d in items:
             yield self.load_item(d)
         return

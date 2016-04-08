@@ -1,11 +1,15 @@
 
+
 from scrapy.contrib.pipeline.images import ImagesPipeline
 from scrapy.exceptions import DropItem
 import scrapy
 import json
 import codecs
 
+
 class SinaweiboPipeline(object):
+    def __init__(self):
+	    self.file = codecs.open('items.json', 'w', encoding='utf-8')
     def process_item(self,item,spider):
         line=json.dumps(dict(item))+"\n"
         self.file.write(line.decode('unicode_escape'))
