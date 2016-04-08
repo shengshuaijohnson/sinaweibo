@@ -18,7 +18,8 @@ IMAGES_STORE = 'e:/repository/sinaweibo/'
 SPIDER_MODULES = ['sinaweibo.spiders']
 NEWSPIDER_MODULE = 'sinaweibo.spiders'
 ITEM_PIPELINES = {
-    'sinaweibo.pipelines.SinaweiboPipeline': 80,
+    'sinaweibo.pipelines.SinaweiboPipeline': 800,
+    #'sinaweibo.pipelines.MyImagesPipeline': 80,
 }
 
 
@@ -90,3 +91,4 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR='httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES=[]
 #HTTPCACHE_STORAGE='scrapy.extensions.httpcache.FilesystemCacheStorage'
+
