@@ -17,8 +17,10 @@ class GakkiSpider(Spider):
         self.user_agent = user_agent
     def process_request(self, request, spider):
         request.headers.setdefault('User-Agent', 'spider')
+
     def load_item(self,d):
         return d
+
     def parse(self, response):
         user_agent = {'User-agent': 'spider'}
         yield scrapy.Request("http://weibo.com/aragakiyui0611",
@@ -29,13 +31,14 @@ class GakkiSpider(Spider):
         return
     def after_login(self,response):
         print "jjjjjjjjjjjjjjjjjj"
-        site=response.xpath('//img[@action-type="fl_pics"]').extract()
-        print "aaaaaaaaaaaaaa"
+        #imgsite=response.xpath('//img[@action-type="fl_pics"]')
+        imgsite=response.xpath('//img/@src')
         items=[]
-        item = Blog()
-        item["text"] =site[0]
-        items.append(item)
-
+        for sel in imgsite:
+            item = Blog()
+            item["image_urls"] = sel.extract()
+            items.append(item)
+            #item['image_urls'][0]=item['image_urls'][0].replace("square","bmiddle")
         for d in items:
             yield self.load_item(d)
         return

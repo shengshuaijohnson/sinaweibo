@@ -15,10 +15,11 @@ class SinaweiboPipeline(object):
         self.file.write(line.decode('unicode_escape'))
         return item
 class MyImagesPipeline(ImagesPipeline):
-
     def get_media_requests(self, item, info):
-        for image_url in item['image_urls']:
-            yield scrapy.Request(image_url)
+
+        print"ppppppppppppppppppppppppp"
+        print item['image_urls']
+        yield scrapy.Request(item['image_urls'])
     def item_completed(self, results, item, info):
         image_paths = [x['path'] for ok, x in results if ok]
         if not image_paths:
