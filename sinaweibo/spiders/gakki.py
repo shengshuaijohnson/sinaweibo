@@ -31,12 +31,15 @@ class GakkiSpider(Spider):
         return
     def after_login(self,response):
         print "jjjjjjjjjjjjjjjjjj"
-        #imgsite=response.xpath('//img[@action-type="fl_pics"]')
+ 
         imgsite=response.xpath('//img/@src')
         items=[]
         for sel in imgsite:
             item = Blog()
-            item["image_urls"] = sel.extract()
+            url=sel.extract()
+            url=url.replace('thumb180','mw690')
+            url=url.replace('orj480','mw690')
+            item["image_urls"] = url
             items.append(item)
             #item['image_urls'][0]=item['image_urls'][0].replace("square","bmiddle")
         for d in items:
