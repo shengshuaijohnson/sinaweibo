@@ -9,7 +9,7 @@ from scrapy.contrib.downloadermiddleware.useragent import UserAgentMiddleware
 
 
 class GakkiSpider(Spider):
-    name = "gakki"
+    name = "gakki" 
     # allowed_domains = ["http://weibo.com/aragakiyui0611"]
     start_urls = ["http://weibo.com/aragakiyui0611"]
 
